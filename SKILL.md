@@ -1,6 +1,6 @@
 ---
 name: seo-section-writer
-description: Write a full SEO page draft for the United States English market from a page architecture and supporting source materials such as PDF brochure text, official website content, and product facts. Use when the user wants a finished draft with Keyword, Title, Description, Keywords, H1, H2 sections, and FAQ, with total body length controlled to about 1500-1700 words.
+description: Write a full SEO page draft for the United States English market from a page architecture and supporting source materials such as PDF brochure text, official website content, and product facts. Use when the user wants a finished draft with Keyword, Title, Description, Keywords, H1, H2 sections, and FAQ, written in a cross-industry commercial style that is specific, evidence-led, and conversion-aware rather than generic SEO prose.
 ---
 
 # SEO Section Writer
@@ -18,9 +18,9 @@ Unless the user explicitly overrides it, assume:
 
 ## Purpose
 
-Convert a page architecture and source materials into a full SEO draft that matches search intent, uses source facts carefully, and is practical for a B2B website.
+Convert a page architecture and source materials into a full SEO draft that matches search intent, uses source facts carefully, and reads like practical commercial content.
 
-The draft must feel grounded in real product information, not like a generic AI summary.
+The draft must feel grounded in real product, service, or process information. It must not read like a generic AI explainer.
 
 ## Expected Inputs
 
@@ -41,9 +41,15 @@ The page architecture should ideally include:
 - Description
 - Keywords
 - H1
-- H2 structure
-- FAQ topic pool
 - Page type
+- Narrative angle
+- Commercial depth
+- Evidence density
+- CTA intensity
+- H2 structure
+- Evidence blocks to include
+- Brand insert points
+- FAQ topic pool
 
 Optional supporting inputs:
 
@@ -66,26 +72,23 @@ Your job is to:
 3. Use the architecture as the content skeleton
 4. Write a complete page draft in natural English
 5. Keep the draft commercially useful and SEO-safe
-6. Finish with an FAQ block that supports search intent
-7. Make visible use of source-backed facts, scale indicators, configurations, and product distinctions whenever they are available
+6. Use the requested evidence blocks so the page feels specific
+7. Finish with an FAQ block that supports search intent and conversion
 
-## Supported Page Modes
+## Core Writing Standard
 
-This skill must support these modes:
+The page should help the reader make progress in a decision.
 
-1. Product page
-2. Product collection page
-3. Category page
-4. Blog article
-5. Landing page
+That decision may be:
 
-Adjust the writing style based on the page type:
+- understanding the right solution
+- comparing options
+- choosing a model or configuration
+- checking application fit
+- reducing buying risk
+- preparing for inquiry
 
-- Product page: focused, technical, conversion-oriented
-- Product collection page: broad overview plus subtype guidance
-- Category page: wider scope, grouped solutions, category navigation value
-- Blog article: explanatory, educational, still commercially aware
-- Landing page: audience-focused, conversion-focused, concise and persuasive
+Do not write the page as a neutral textbook article unless the keyword clearly requires that.
 
 ## Writing Logic
 
@@ -93,70 +96,14 @@ Use the page architecture as the skeleton.
 
 Write section by section, but do not expose internal planning steps in the final output.
 
-If the upstream page architecture includes many subpoints under an H2, blend them naturally into the H2 body copy instead of outputting separate H3 headings.
+If the architecture contains many subpoints under an H2, blend them naturally into the H2 body copy instead of outputting separate H3 headings.
 
-Before drafting, extract the strongest factual details from the source materials and actively distribute them into the most relevant sections.
+Before drafting:
 
-Before drafting, decide which facts are central to this page and which facts belong elsewhere on the site.
-
-Example:
-
-- machine capacity belongs on a product or collection page
-- subtype differences belong on a collection page
-- general supplier history usually belongs on an about page
-- EPC and after-sales system details may belong on a service page unless they directly help close the current page
-
-For product-led pages, prioritize `machine-native facts` first.
-
-Machine-native facts include:
-
-- machine models
-- capacity or throughput
-- feed size
-- discharge size
-- grinding mode
-- cylinder dimensions
-- drive or power information
-- material suitability
-- structural features
-- liner or media-related details
-- classifier compatibility
-- installation form
-
-Related process facts can be used only when they clearly explain how the machine fits into the production line.
-
-Do not substitute unrelated or weakly related equipment parameters for missing machine-native facts.
-
-Examples of facts that should be actively used when available:
-
-- plant capacity
-- feed size
-- discharge size
-- throughput range
-- power range
-- machine dimensions
-- model names
-- line configuration
-- supported materials
-- application industries
-- process stages
-- plant layout scale
-- distinguishing engineering features
-- installation or operation scenarios
-
-Do not leave these details unused if they are clearly present in the provided source material.
-
-For B2B industrial and equipment topics, prefer these content elements when supported by the source materials:
-
-- product overview
-- machine types or subtype differences
-- working principle
-- application scenarios
-- technical strengths
-- configuration options
-- performance-related factors
-- buying or selection guidance
-- FAQ
+1. identify the page's decision job
+2. identify the strongest available evidence
+3. identify where the brand should appear naturally
+4. decide which sections should carry the strongest commercial weight
 
 ## Source Material Rules
 
@@ -164,34 +111,16 @@ For B2B industrial and equipment topics, prefer these content elements when supp
 - Prefer source-supported claims over generic filler
 - If a specification, capacity, material, certification, or feature is not supported by the provided material, do not invent it
 - If the source material includes subtype differences, distribute them into the relevant H2 sections
-- If the source material includes parameter information, integrate it naturally where useful instead of dumping it randomly
-- If the source material contains measurable details such as capacity, output size, model ranges, power, dimensions, supported materials, or plant scale, incorporate them into the body where they improve credibility
+- If the source material includes parameter information, integrate it where useful instead of dumping it randomly
+- If the source material contains measurable details such as capacity, output size, model ranges, power, dimensions, supported materials, or plant scale, incorporate them where they improve credibility
 - If the source material contains multiple models or configurations, mention those distinctions instead of flattening them into one vague description
 - Treat brochure and official-site facts as higher priority than generic industry wording
-
-Use only the source material that is relevant to the page's actual goal.
-
-For example:
-
-- product pages should prioritize machine facts, applications, configurations, process fit, and buyer decision points
-- collection pages should prioritize subtype differences, selection logic, and family-level comparisons
-- category pages should prioritize scope, grouped solutions, and navigation value
-
-Do not mechanically import every brochure topic into the draft.
-
-If the brochure also contains company history, EPC capability, patent counts, remote monitoring platforms, overseas visits, or general service claims, use them only when they directly support the current page intent and placement.
-
-Do not let company-level sales material overwhelm a product-focused page.
-
-When writing a product page, collection page, or category page, do not use detailed parameter values from loosely related support equipment just to make the draft look more data-rich.
-
-If a feeder, flotation machine, screen, or control system is mentioned, keep it at the workflow level unless its relationship to the target machine is direct and decision-relevant.
 
 ## Evidence Usage Rule
 
 When source material includes usable factual detail, every main draft should visibly include concrete evidence from that material.
 
-At minimum, try to reflect several of the following when available:
+Try to reflect several of the following when available:
 
 - numerical ranges
 - model names
@@ -200,30 +129,28 @@ At minimum, try to reflect several of the following when available:
 - material types
 - industry applications
 - capacity or scale indicators
-
-The page should not read as if it could apply equally to any random machine in the same industry.
+- standards or compliance references
+- buying inputs needed for quotation
 
 If the provided materials are rich in facts but the draft remains generic, the draft is failing the task.
 
-If the provided materials are rich in facts but the draft shifts into generic supplier-promotion copy, the draft is also failing the task.
+## Evidence Block Rule
 
-When the provided materials contain multiple concrete product facts, the final page should visibly use at least `3-6` specific facts where relevant.
+If the page architecture requests evidence blocks, use them.
 
-Examples include:
+Possible blocks include:
 
-- capacity values or ranges
-- feed size or discharge size
-- model names
-- cylinder dimensions
-- power figures
-- ore or material types
-- wet or dry grinding modes
-- classifier pairings
-- line configuration details
+- parameter snapshot
+- compact comparison table
+- model-selection checklist
+- application suitability list
+- process flow summary
+- pricing factors list
+- quote preparation checklist
 
-If these facts are available but missing from the final draft, the draft is failing the task.
+These blocks should support scanning and decision-making. They should not dominate the page.
 
-These should preferably be `machine-native facts`, not substitute facts from adjacent equipment.
+Do not invent complete tables if only partial facts are available.
 
 ## Relevance Filtering Rule
 
@@ -235,54 +162,44 @@ Before drafting, separate source material into:
 
 Use this filter:
 
-- `Core page evidence`: machine models, specifications, capacities, material types, process details, subtype differences, application fields, installation scenarios, line roles, and buyer selection factors
-- `Optional supporting evidence`: service scope, customization support, engineering assistance, delivery support, or certifications that directly reduce buyer hesitation
-- `Off-topic or low-priority evidence`: generic company praise, patent counts, broad corporate claims, export footprint, visitor stories, or unrelated platform capabilities unless the page is specifically about supplier strength or company profile
+- `Core page evidence`: models, specifications, capacities, materials, process details, subtype differences, application fields, installation scenarios, line roles, buying criteria
+- `Optional supporting evidence`: customization support, engineering help, delivery support, installation support, spare parts, after-sales response
+- `Off-topic or low-priority evidence`: generic company praise, patent counts, export footprint, visitor stories, or unrelated service claims unless the page is specifically about supplier strength
 
-The final page should be built mainly from core page evidence.
-
-Optional supporting evidence should stay brief and secondary.
-
-Off-topic or low-priority evidence should usually be excluded.
+Build mainly from core page evidence.
 
 ## Supplier Content Limit Rule
 
-On product pages, collection pages, and category pages, supplier-strength content must stay limited.
-
-Examples include:
-
-- company history
-- patent counts
-- certifications
-- EPC service descriptions
-- remote monitoring platforms
-- export footprint
-- customer visit stories
-
-These can be mentioned briefly when they reduce buyer hesitation, but they must not dominate the page.
+On product pages, collection pages, category pages, and most commercial blog articles, supplier-strength content must stay secondary.
 
 As a practical rule, keep this type of content to about `10%-15%` of the total body at most unless the page is specifically meant to sell supplier capability.
 
-If there is a dedicated trust-oriented section such as `Why Choose`, `Why Work With`, or `Why This Supplier`, keep it concise.
+If there is a dedicated trust-oriented section such as `Why Choose` or `Why Work With`, keep it concise.
 
-As a practical rule, that section should usually stay within about `80-120 words` on a product-led page unless the user explicitly requests a stronger supplier angle.
+## FTM-Inspired Style Rules
+
+When the keyword and source material support it, prefer these moves:
+
+- open with the buyer problem, use case, or decision instead of a dictionary-style definition
+- compare options when the reader is likely weighing alternatives
+- mention parameters, use conditions, or configuration choices early enough to be useful
+- connect educational content to commercial next steps naturally
+- distribute light brand mentions throughout the page instead of hiding them all in the last paragraph
+
+Do not mimic mining-industry vocabulary for unrelated sectors.
+
+Adapt the same logic to the industry's own buying criteria, units, and evidence types.
 
 ## Word Count Rule
 
-The full draft must be controlled to about `1500-1700 words`.
+The full draft should usually be controlled to about `1500-1700 words`.
 
 Target range:
 
-- Minimum: 1500 words
-- Maximum: 1700 words
+- Minimum: 1450 words
+- Maximum: 1750 words
 
-Distribute word count across the page in a balanced way.
-
-Do not produce a shallow 900-word draft.
-
-Do not produce an oversized 2200-word draft.
-
-If the source material is very rich, summarize and compress rather than exceeding the range.
+If the page needs to be shorter or longer because the user explicitly requests it, follow the user's request.
 
 ## SEO Rules
 
@@ -292,16 +209,13 @@ If the source material is very rich, summarize and compress rather than exceedin
 - Do not force awkward exact-match repetition
 - Keep headings and body copy aligned with likely search intent
 - For commercial pages, keep buyer usefulness stronger than generic information
-- Favor source-grounded specificity over broad filler because concrete detail improves credibility and differentiation
-- Do not add loosely related keyword variants just because they appeared in research if they would weaken the page's commercial focus
-- Prioritize commercially relevant facts over informational side topics when the page intent is product selection or inquiry
+- Favor source-grounded specificity over broad filler
+- Do not add loosely related keyword variants just because they appeared in research if they weaken the page's commercial focus
 - Do not expose internal SEO reasoning, keyword-research logic, or prompt-process commentary in the final draft
 
 ## Output Requirements
 
-Always output in this structure.
-
-Keep the format clean and consistent.
+Always output in this structure:
 
 ```markdown
 Keyword
@@ -351,8 +265,6 @@ Include at least one compact structured block when relevant, such as:
 - a configuration highlights block
 - a compact markdown table
 
-Keep these blocks concise and useful. They should support reading, not dominate the page.
-
 ## Output Standards
 
 ### Keyword
@@ -390,58 +302,16 @@ Keep these blocks concise and useful. They should support reading, not dominate 
 - Keep paragraphs readable and not overly dense
 - Avoid robotic symmetry across every section
 - When factual details are available, use them to make the section specific, credible, and differentiated
-- Keep each section tightly tied to the approved page angle instead of drifting into company-profile or general-knowledge filler
-- Favor machine-native facts over surrounding process-equipment facts when the page is centered on one machine or product family
-- When specifications are available, embed a compact data block or small table in the most relevant section instead of leaving the entire page as plain paragraphs
-
-### Structured Data Blocks
-
-Use compact structured presentation when it helps the buyer scan the page faster.
-
-Preferred options:
-
-- bullet summary of key specs
-- short parameter snapshot
-- concise model-selection list
-- compact markdown table with 2-5 rows when the source facts are clear
-
-Good uses:
-
-- capacity range
-- feed size
-- discharge size
-- power range
-- grinding mode
-- supported materials
-- optional classifier pairing
-- model differences
-
-Rules:
-
-- only use facts supported by the provided materials
-- keep the block short
-- place it near the related H2 section
-- do not invent complete parameter tables if the source only gives partial data
-- do not force a table if a short spec list is clearer
+- Keep each section tightly tied to the approved page angle instead of drifting into company-profile or broad encyclopedia filler
+- Use brand mentions where the architecture says they belong, and keep them natural
 
 ### FAQ
 
 - Include a practical FAQ block at the end
 - Questions should reflect user intent, objections, buying considerations, or common clarifications
 - Answers should be concise but meaningful
-- Do not make FAQ answers so long that they dominate the page
-- For product and collection pages, prefer purchase-oriented and product-fit questions over broad encyclopedia questions
-- Do not include FAQ questions only because they have search volume if they are weakly aligned with the page's real intent
-- Avoid FAQ items that pull the page into adjacent but different topics unless the architecture explicitly calls for comparison intent
-
-For product, collection, and category pages, at least `70%` of FAQ items should support:
-
-- product fit
-- materials handled
-- configuration choices
-- capacity or process questions
-- integration with related equipment
-- quote and selection preparation
+- For product and collection pages, prefer purchase-oriented and fit-oriented questions over broad encyclopedia questions
+- At least `70%` of FAQ items on commercial pages should support fit, configuration, process questions, integration, quotation preparation, or supplier evaluation
 
 ## Page-Type Guidance
 
@@ -449,15 +319,11 @@ For product, collection, and category pages, at least `70%` of FAQ items should 
 
 Focus on:
 
-- what the machine is
-- how it works
-- why it is useful
-- where it is used
-- what buyers should evaluate
-
-Keep supplier-strength content minimal unless it directly supports the purchase decision and fits naturally near the end of the page.
-
-If hard product facts are available, they should outweigh supplier-support content by a clear margin.
+- what the product is for
+- how it works or operates
+- where it fits
+- what specs or options matter
+- how to choose the right version
 
 ### 2. Product Collection Page
 
@@ -467,12 +333,6 @@ Focus on:
 - major subtype differences
 - use-case fit
 - how to choose between options
-
-If subtypes such as `Single Shaft` and `Double Shaft` are part of the architecture, make sure both are clearly covered in the body.
-
-Do not let collection pages drift into a generic company introduction.
-
-If subtype-specific facts are available, use them to show real distinctions rather than generic family-level wording.
 
 ### 3. Category Page
 
@@ -491,6 +351,7 @@ Focus on:
 - comparison
 - process understanding
 - practical guidance
+- a soft commercial bridge when appropriate
 
 ### 5. Landing Page
 
@@ -498,7 +359,7 @@ Focus on:
 
 - audience pain points
 - solution fit
-- key value proposition
+- proof points
 - strong conversion framing
 
 ## Style
@@ -510,33 +371,12 @@ Focus on:
 - Keep the tone suitable for industrial or B2B decision-makers when relevant
 - Prefer concrete statements over vague superlatives
 - Use real distinctions from the provided materials instead of interchangeable claims
-- Avoid brochure-summary language such as "the brochure shows" or "according to the brochure" in the final draft unless the user explicitly wants source-attribution language
-- Avoid meta-writing language such as "the uploaded material", "the keyword brief shows", "users searching this term", or "this is useful for SEO"
+- Avoid brochure-summary language such as `the brochure shows` or `according to the brochure` unless the user explicitly wants source-attribution language
+- Avoid meta-writing language such as `the uploaded material`, `the keyword brief shows`, or `users searching this term`
 
 ## Guardrails
 
 - Do not invent unsupported technical claims
 - Do not output section-planning notes
 - Do not output H3 headings in the final draft
-- Do not exceed the word-count range without a strong reason
-- Do not turn commercial pages into encyclopedia articles
-- Do not let the FAQ become longer than the main body sections
-- Do not ignore brochure, catalog, parameter-sheet, or official-site details when they are available
-- Do not write a draft that could fit dozens of unrelated products with only keyword swaps
-- Do not paste brochure content into the draft just because it exists
-- Do not overuse supplier-strength paragraphs on pages whose primary job is product explanation or product selection
-- Do not let FAQ become a dumping ground for all related keyword variants
-- Do not produce a product page where company-profile content outweighs machine-specific content
-- Do not treat generic service capability as a substitute for real product detail
-- Do not pad a machine page with detailed facts from other equipment categories unless those facts are directly needed for process explanation
-- Do not mention the brochure, uploaded files, keyword strategy, or SEO intent explicitly in the final page copy
-- Do not output an all-prose industrial product page when usable structured product data is available
-
-## Handoff
-
-The result should be ready for:
-
-- manual editing
-- AI-rate reduction rewriting
-- CMS upload
-- final QA before publishing
+- Do not let the draft become a generic SEO explainer if the architecture calls for decision support
