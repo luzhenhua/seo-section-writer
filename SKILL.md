@@ -69,11 +69,12 @@ Your job is to:
 
 1. Read the page architecture carefully
 2. Read the supporting materials carefully
-3. Use the architecture as the content skeleton
-4. Write a complete page draft in natural English
-5. Keep the draft commercially useful and SEO-safe
-6. Use the requested evidence blocks so the page feels specific
-7. Finish with an FAQ block that supports search intent and conversion
+3. Extract useful facts from the supporting materials before writing
+4. Use the architecture as the content skeleton
+5. Write a complete page draft in natural English
+6. Keep the draft commercially useful and SEO-safe
+7. Use the requested evidence blocks so the page feels specific
+8. Finish with an FAQ block that supports search intent and conversion
 
 ## Core Writing Standard
 
@@ -105,6 +106,23 @@ Before drafting:
 3. identify where the brand should appear naturally
 4. decide which sections should carry the strongest commercial weight
 
+Do not move from source review to drafting too quickly.
+
+When company documents, brochures, catalogs, product sheets, case materials, or official website text are available, review them as working evidence rather than as background reading.
+
+At minimum, try to extract:
+
+- machine or product facts
+- model names
+- parameter ranges
+- application details
+- process descriptions
+- configuration options
+- buyer-relevant service details
+- quotation or selection inputs
+
+If the source pack is rich, the final page should visibly reflect that richness.
+
 ## Source Material Rules
 
 - Use brochure text, website text, and product facts to add concrete substance
@@ -115,6 +133,31 @@ Before drafting:
 - If the source material contains measurable details such as capacity, output size, model ranges, power, dimensions, supported materials, or plant scale, incorporate them where they improve credibility
 - If the source material contains multiple models or configurations, mention those distinctions instead of flattening them into one vague description
 - Treat brochure and official-site facts as higher priority than generic industry wording
+- If both company documents and official website content are available, actively compare them and use the combination to improve completeness and precision
+- Do not skim rich source material and then write from memory or generic industry patterns
+
+## Source Review Workflow
+
+When source material is substantial, follow this workflow before drafting:
+
+1. review the page architecture so you know what evidence the page needs
+2. scan all provided company documents and official-site text for relevant facts
+3. extract the most decision-relevant facts into a mental shortlist
+4. separate facts into:
+   - product or service facts
+   - application or process facts
+   - supplier-support facts
+5. discard low-value corporate filler unless the page specifically needs it
+6. map the strongest facts to the sections where they belong
+
+Do not rely on one quick pass through one document if multiple sources are available.
+
+If both an official website and company documents are available, treat them as complementary:
+
+- use official-site material for current positioning, scope, and presentational wording
+- use documents for deeper specifications, configurations, process fit, and supporting detail
+
+If the user explicitly provides a company document for the target business, that document must be treated as a primary source, not optional flavor text.
 
 ## Evidence Usage Rule
 
@@ -133,6 +176,8 @@ Try to reflect several of the following when available:
 - buying inputs needed for quotation
 
 If the provided materials are rich in facts but the draft remains generic, the draft is failing the task.
+
+If the provided materials are rich in facts but only one or two weak details appear in the final page, the draft is also failing the task.
 
 ## Evidence Block Rule
 
@@ -168,6 +213,8 @@ Use this filter:
 
 Build mainly from core page evidence.
 
+If the provided company document contains many facts but most of them land in `Off-topic or low-priority evidence`, pause and re-check whether the page architecture is correct or whether the writer is overlooking relevant material.
+
 ## Supplier Content Limit Rule
 
 On product pages, collection pages, category pages, and most commercial blog articles, supplier-strength content must stay secondary.
@@ -175,6 +222,35 @@ On product pages, collection pages, category pages, and most commercial blog art
 As a practical rule, keep this type of content to about `10%-15%` of the total body at most unless the page is specifically meant to sell supplier capability.
 
 If there is a dedicated trust-oriented section such as `Why Choose` or `Why Work With`, keep it concise.
+
+## Corporate Writing Risk Rule
+
+If the brand is a listed company, regulated business, or otherwise sensitive to public-facing claims, use a stricter writing standard.
+
+Under this standard:
+
+- avoid soft, second-hand phrasing such as `describes itself as`, `states that`, `mentions`, `claims`, or similar brochure-summary language in normal page copy
+- do not present company capability through vague prestige wording when the buyer-facing operational value is unclear
+- prefer direct, concrete wording tied to a buyer outcome, project stage, service scope, or verifiable company fact
+- if a fact is sensitive, not clearly sourced, or too promotional, either omit it or rewrite it into a lower-risk operational statement
+- keep certifications, patents, awards, platform capabilities, and service claims proportionate to the page's real purpose
+
+Bad pattern:
+
+- `The company states that it has...`
+- `It also mentions...`
+
+Better pattern:
+
+- `For full-line projects, the supplier can support installation and commissioning.`
+- `The company also offers remote monitoring and diagnostic support for larger systems.`
+
+When source attribution is necessary, use clean attribution rather than brochure-summary phrasing.
+
+Examples:
+
+- `According to the company's published materials, ...`
+- `The company lists ISO9001 certification and after-sales service support.`
 
 ## FTM-Inspired Style Rules
 
@@ -189,6 +265,18 @@ When the keyword and source material support it, prefer these moves:
 Do not mimic mining-industry vocabulary for unrelated sectors.
 
 Adapt the same logic to the industry's own buying criteria, units, and evidence types.
+
+## Brand and Trust Writing Rule
+
+Brand-support content must sound publishable for a serious corporate website.
+
+Use these rules:
+
+- connect trust points to buyer relevance such as delivery, engineering coordination, installation, commissioning, diagnostics, spare parts, or service response
+- avoid stacking awards, certifications, patents, and slogans in one dense paragraph
+- do not use investor-relations tone, self-congratulatory phrasing, or unsupported superlatives
+- when mentioning certifications or capabilities, keep the wording factual and restrained
+- if the page is product-led, trust content should support the machine decision rather than overshadow it
 
 ## Word Count Rule
 
@@ -304,6 +392,7 @@ Include at least one compact structured block when relevant, such as:
 - When factual details are available, use them to make the section specific, credible, and differentiated
 - Keep each section tightly tied to the approved page angle instead of drifting into company-profile or broad encyclopedia filler
 - Use brand mentions where the architecture says they belong, and keep them natural
+- If the brand is sensitive to public claims, prefer verifiable operational wording over promotional corporate phrasing
 
 ### FAQ
 
@@ -373,10 +462,13 @@ Focus on:
 - Use real distinctions from the provided materials instead of interchangeable claims
 - Avoid brochure-summary language such as `the brochure shows` or `according to the brochure` unless the user explicitly wants source-attribution language
 - Avoid meta-writing language such as `the uploaded material`, `the keyword brief shows`, or `users searching this term`
+- Avoid weak attribution verbs such as `describes itself as`, `states that`, `mentions`, or `claims` in normal commercial copy unless explicit attribution is legally or editorially necessary
 
 ## Guardrails
 
 - Do not invent unsupported technical claims
+- Do not inflate company qualifications, certifications, patents, platform functions, or service scope beyond what is clearly supported
+- Do not write promotional corporate-profile copy that would look risky or imprecise on a listed company's website
 - Do not output section-planning notes
 - Do not output H3 headings in the final draft
 - Do not let the draft become a generic SEO explainer if the architecture calls for decision support
