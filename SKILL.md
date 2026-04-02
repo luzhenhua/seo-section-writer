@@ -106,6 +106,27 @@ Example:
 - general supplier history usually belongs on an about page
 - EPC and after-sales system details may belong on a service page unless they directly help close the current page
 
+For product-led pages, prioritize `machine-native facts` first.
+
+Machine-native facts include:
+
+- machine models
+- capacity or throughput
+- feed size
+- discharge size
+- grinding mode
+- cylinder dimensions
+- drive or power information
+- material suitability
+- structural features
+- liner or media-related details
+- classifier compatibility
+- installation form
+
+Related process facts can be used only when they clearly explain how the machine fits into the production line.
+
+Do not substitute unrelated or weakly related equipment parameters for missing machine-native facts.
+
 Examples of facts that should be actively used when available:
 
 - plant capacity
@@ -162,6 +183,10 @@ If the brochure also contains company history, EPC capability, patent counts, re
 
 Do not let company-level sales material overwhelm a product-focused page.
 
+When writing a product page, collection page, or category page, do not use detailed parameter values from loosely related support equipment just to make the draft look more data-rich.
+
+If a feeder, flotation machine, screen, or control system is mentioned, keep it at the workflow level unless its relationship to the target machine is direct and decision-relevant.
+
 ## Evidence Usage Rule
 
 When source material includes usable factual detail, every main draft should visibly include concrete evidence from that material.
@@ -197,6 +222,8 @@ Examples include:
 - line configuration details
 
 If these facts are available but missing from the final draft, the draft is failing the task.
+
+These should preferably be `machine-native facts`, not substitute facts from adjacent equipment.
 
 ## Relevance Filtering Rule
 
@@ -236,6 +263,10 @@ These can be mentioned briefly when they reduce buyer hesitation, but they must 
 
 As a practical rule, keep this type of content to about `10%-15%` of the total body at most unless the page is specifically meant to sell supplier capability.
 
+If there is a dedicated trust-oriented section such as `Why Choose`, `Why Work With`, or `Why This Supplier`, keep it concise.
+
+As a practical rule, that section should usually stay within about `80-120 words` on a product-led page unless the user explicitly requests a stronger supplier angle.
+
 ## Word Count Rule
 
 The full draft must be controlled to about `1500-1700 words`.
@@ -264,6 +295,7 @@ If the source material is very rich, summarize and compress rather than exceedin
 - Favor source-grounded specificity over broad filler because concrete detail improves credibility and differentiation
 - Do not add loosely related keyword variants just because they appeared in research if they would weaken the page's commercial focus
 - Prioritize commercially relevant facts over informational side topics when the page intent is product selection or inquiry
+- Do not expose internal SEO reasoning, keyword-research logic, or prompt-process commentary in the final draft
 
 ## Output Requirements
 
@@ -310,6 +342,17 @@ If the page architecture contains more than three H2 sections, continue the same
 
 and so on.
 
+When the source materials contain usable specifications, model distinctions, capacity ranges, or configuration differences, do not make the page pure prose.
+
+Include at least one compact structured block when relevant, such as:
+
+- a short specification summary
+- a model comparison list
+- a configuration highlights block
+- a compact markdown table
+
+Keep these blocks concise and useful. They should support reading, not dominate the page.
+
 ## Output Standards
 
 ### Keyword
@@ -348,6 +391,38 @@ and so on.
 - Avoid robotic symmetry across every section
 - When factual details are available, use them to make the section specific, credible, and differentiated
 - Keep each section tightly tied to the approved page angle instead of drifting into company-profile or general-knowledge filler
+- Favor machine-native facts over surrounding process-equipment facts when the page is centered on one machine or product family
+- When specifications are available, embed a compact data block or small table in the most relevant section instead of leaving the entire page as plain paragraphs
+
+### Structured Data Blocks
+
+Use compact structured presentation when it helps the buyer scan the page faster.
+
+Preferred options:
+
+- bullet summary of key specs
+- short parameter snapshot
+- concise model-selection list
+- compact markdown table with 2-5 rows when the source facts are clear
+
+Good uses:
+
+- capacity range
+- feed size
+- discharge size
+- power range
+- grinding mode
+- supported materials
+- optional classifier pairing
+- model differences
+
+Rules:
+
+- only use facts supported by the provided materials
+- keep the block short
+- place it near the related H2 section
+- do not invent complete parameter tables if the source only gives partial data
+- do not force a table if a short spec list is clearer
 
 ### FAQ
 
@@ -436,6 +511,7 @@ Focus on:
 - Prefer concrete statements over vague superlatives
 - Use real distinctions from the provided materials instead of interchangeable claims
 - Avoid brochure-summary language such as "the brochure shows" or "according to the brochure" in the final draft unless the user explicitly wants source-attribution language
+- Avoid meta-writing language such as "the uploaded material", "the keyword brief shows", "users searching this term", or "this is useful for SEO"
 
 ## Guardrails
 
@@ -452,6 +528,9 @@ Focus on:
 - Do not let FAQ become a dumping ground for all related keyword variants
 - Do not produce a product page where company-profile content outweighs machine-specific content
 - Do not treat generic service capability as a substitute for real product detail
+- Do not pad a machine page with detailed facts from other equipment categories unless those facts are directly needed for process explanation
+- Do not mention the brochure, uploaded files, keyword strategy, or SEO intent explicitly in the final page copy
+- Do not output an all-prose industrial product page when usable structured product data is available
 
 ## Handoff
 
