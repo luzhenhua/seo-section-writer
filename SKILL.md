@@ -48,6 +48,7 @@ The page architecture should ideally include:
 - CTA intensity
 - H2 structure
 - Evidence blocks to include
+- Evidence alignment check
 - Brand insert points
 - FAQ topic pool
 
@@ -103,8 +104,9 @@ Before drafting:
 
 1. identify the page's decision job
 2. identify the strongest available evidence
-3. identify where the brand should appear naturally
-4. decide which sections should carry the strongest commercial weight
+3. check whether the architecture already flagged evidence mismatch risk
+4. identify where the brand should appear naturally
+5. decide which sections should carry the strongest commercial weight
 
 Do not move from source review to drafting too quickly.
 
@@ -249,8 +251,10 @@ When source attribution is necessary, use clean attribution rather than brochure
 
 Examples:
 
-- `According to the company's published materials, ...`
-- `The company lists ISO9001 certification and after-sales service support.`
+- `According to the company's official website, the service scope includes installation and commissioning support.`
+- `The company reports ISO9001 certification and after-sales service coverage.`
+
+Use explicit attribution only when legal, compliance, or accuracy risk makes it necessary.
 
 ## FTM-Inspired Style Rules
 
@@ -299,7 +303,54 @@ If the page needs to be shorter or longer because the user explicitly requests i
 - For commercial pages, keep buyer usefulness stronger than generic information
 - Favor source-grounded specificity over broad filler
 - Do not add loosely related keyword variants just because they appeared in research if they weaken the page's commercial focus
+- Prefer one stable primary term in body copy instead of repeatedly cycling through near-duplicate keyword variants
+- Use secondary variants only when they are semantically useful in that sentence, heading, table, FAQ, or CTA
 - Do not expose internal SEO reasoning, keyword-research logic, or prompt-process commentary in the final draft
+
+## Topic Mismatch Rule
+
+If the page architecture, keyword target, and source materials clearly point to different topics, do not silently rewrite the page into a new topic.
+
+Instead:
+
+1. detect the mismatch explicitly
+2. state briefly why the supplied evidence does not support the requested page well
+3. propose the most evidence-supported replacement topic or page type
+4. stop and ask for direction unless the user has already authorized topic correction
+
+Do not continue with a rewritten page on a different topic as if nothing changed.
+
+If the requested page can still be written with limited evidence, say that clearly and keep the unsupported parts restrained.
+
+If a mismatch is detected and user direction is required, output a short `Mismatch Notice` and pause drafting:
+
+```markdown
+## Mismatch Notice
+- Requested Topic:
+- Evidence-Supported Topic:
+- Why They Conflict:
+- Recommended Next Step:
+```
+
+## Published-Page Language Rule
+
+When writing final website copy, treat company documents, brochures, catalogs, and official website text as evidence sources, not as the narrative subject of the page.
+
+Avoid repetitive source-led phrasing such as:
+
+- `the company's published materials show`
+- `the catalog lists`
+- `the product line includes`
+- `the company's service materials highlight`
+- `the company presents`
+
+Those phrases may be acceptable in internal notes, but they weaken a public-facing page.
+
+Preferred pattern:
+
+- extract the fact from the source
+- rewrite it into direct website language
+- keep explicit attribution only when it is necessary for caution or compliance
 
 ## Output Requirements
 
@@ -321,14 +372,14 @@ Keywords
 H1
 ...
 
-## H2-1
-正文
+## H2 Title: Buyer Problem and Fit
+Body copy for this section.
 
-## H2-2
-正文
+## H2 Title: Process or Working Logic
+Body copy for this section.
 
-## H2-3
-正文
+## H2 Title: Selection Guidance and Next Step
+Body copy for this section.
 
 ## FAQ
 Q1...
@@ -337,12 +388,16 @@ A1...
 
 Do not include `### H3` headings in the final output.
 
-If the page architecture contains more than three H2 sections, continue the same pattern:
+The final draft must use the actual section titles from the page architecture or clean writer-ready equivalents.
 
-- `## H2-4`
-- `## H2-5`
+Do not output placeholder headings such as:
 
-and so on.
+- `## H2-1`
+- `## H2-2`
+- `## Section 1`
+- `## Main Content`
+
+If the page architecture contains more than three H2 sections, continue the same pattern with real headings.
 
 When the source materials contain usable specifications, model distinctions, capacity ranges, or configuration differences, do not make the page pure prose.
 
@@ -352,6 +407,20 @@ Include at least one compact structured block when relevant, such as:
 - a model comparison list
 - a configuration highlights block
 - a compact markdown table
+
+## Formatting Rule
+
+The final draft should look like publishable markdown, not pasted source notes.
+
+Use these rules:
+
+- use valid markdown headings
+- use `-` for bullet lists
+- use standard markdown tables when tables are needed
+- do not output unusual bullet glyphs copied from PDFs or slides, such as copied-dot symbols
+- do not leave untranslated placeholder text in non-target languages
+- keep structured blocks clean and scannable
+- do not let formatting collapse into one long run of paragraphs if the page architecture calls for sections, lists, or tables
 
 ## Output Standards
 
@@ -386,6 +455,7 @@ Include at least one compact structured block when relevant, such as:
 
 - Each H2 section should read like real page content, not notes
 - Each H2 should advance the user journey
+- Each H2 must have a real, decision-relevant title
 - Integrate useful details from source materials
 - Keep paragraphs readable and not overly dense
 - Avoid robotic symmetry across every section
@@ -469,6 +539,9 @@ Focus on:
 - Do not invent unsupported technical claims
 - Do not inflate company qualifications, certifications, patents, platform functions, or service scope beyond what is clearly supported
 - Do not write promotional corporate-profile copy that would look risky or imprecise on a listed company's website
+- Do not silently change the topic when source materials and page architecture do not match
+- Do not output placeholder H2 labels instead of real section titles
+- Do not output source-summary language as the dominant voice of the page
 - Do not output section-planning notes
 - Do not output H3 headings in the final draft
 - Do not let the draft become a generic SEO explainer if the architecture calls for decision support
