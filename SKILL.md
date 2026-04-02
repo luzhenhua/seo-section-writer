@@ -281,6 +281,8 @@ Use these rules:
 - do not use investor-relations tone, self-congratulatory phrasing, or unsupported superlatives
 - when mentioning certifications or capabilities, keep the wording factual and restrained
 - if the page is product-led, trust content should support the machine decision rather than overshadow it
+- brand or trust sections must include at least one concrete, verifiable fact from the source material, such as years in operation, countries served, specific certifications, production capacity, named service capabilities, or project types completed
+- if no such facts are available from source material, keep the brand section to two or three sentences maximum and do not pad it with generic trust language that could apply to any company in any industry
 
 ## Word Count Rule
 
@@ -292,6 +294,18 @@ Target range:
 - Maximum: 1750 words
 
 If the page needs to be shorter or longer because the user explicitly requests it, follow the user's request.
+
+### Evidence-Short Downgrade
+
+If source material is thin or absent and the page cannot reach 1450 words with substantive, non-repetitive content, reduce the word count rather than padding.
+
+Rules:
+
+- A 1000-word page with real content is better than a 1700-word page filled with vague qualifiers
+- Do not repeat the same list of factors (such as material type, feed size, target fineness, capacity) across multiple sections to reach the word count
+- Do not use phrases like `depends on your project`, `should be confirmed during selection`, or `varies based on requirements` as paragraph filler
+- If you cannot write a section with at least one concrete, decision-useful statement, the section should be shorter or merged with another section
+- When downgrading, add a short note at the end of the draft: `[Writer note: source material was limited; some sections are shorter than typical. Additional product data would strengthen this page.]`
 
 ## SEO Rules
 
@@ -471,6 +485,10 @@ Use these rules:
 - Answers should be concise but meaningful
 - For product and collection pages, prefer purchase-oriented and fit-oriented questions over broad encyclopedia questions
 - At least `70%` of FAQ items on commercial pages should support fit, configuration, process questions, integration, quotation preparation, or supplier evaluation
+- Every FAQ answer must lead with a direct, usable response before adding any qualifiers. If the answer is yes or no with conditions, say yes or no first
+- Never write an FAQ answer that consists entirely of `it depends`, `consult your supplier`, `should be confirmed during selection`, or similar deferrals. These are non-answers
+- If you cannot give a concrete answer to a planned FAQ question because evidence is missing, replace it with a question you can answer with available information
+- A good FAQ answer teaches the reader something or helps them take a next step. A bad FAQ answer sends them away knowing nothing more than before
 
 ## Page-Type Guidance
 
@@ -533,6 +551,19 @@ Focus on:
 - Avoid brochure-summary language such as `the brochure shows` or `according to the brochure` unless the user explicitly wants source-attribution language
 - Avoid meta-writing language such as `the uploaded material`, `the keyword brief shows`, or `users searching this term`
 - Avoid weak attribution verbs such as `describes itself as`, `states that`, `mentions`, or `claims` in normal commercial copy unless explicit attribution is legally or editorially necessary
+
+### AI Writing Anti-Patterns
+
+Do not use these patterns. They are the most common signals of machine-generated content:
+
+- Excessive hedging in place of substance: `may`, `might`, `can potentially`, `it is worth noting that`, `it is important to consider`
+- Filler openers: `In today's competitive landscape...`, `When it comes to...`, `It is important to note that...`
+- Non-committal statements disguised as content: `depends on your project`, `should be confirmed during selection`, `varies based on requirements`, `the right choice depends on many factors`
+- Repeating the same list of variables (such as material type, feed size, target fineness, capacity) across multiple sections as if each repetition adds new value
+- Symmetrical paragraph structures where every section follows the same pattern: general statement, bullet list, closing qualifier
+- Overuse of passive voice: `is used`, `is designed`, `is typically selected`, `is often considered`
+- Paragraphs that could apply to any product in any industry with no change. If you can swap the product name and the paragraph still works, it is too generic
+- Ending sections with a variation of `contact us to learn more` or `the right solution depends on your specific needs`
 
 ## Guardrails
 
