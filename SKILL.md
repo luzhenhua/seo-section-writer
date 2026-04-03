@@ -42,6 +42,7 @@ The page architecture should ideally include:
 - Keywords
 - H1
 - Page type
+- Primary Decision Job
 - Narrative angle
 - Commercial depth
 - Evidence density
@@ -49,6 +50,7 @@ The page architecture should ideally include:
 - H2 structure
 - Evidence blocks to include
 - Evidence alignment check
+- Scope Boundaries
 - Brand insert points
 - FAQ topic pool
 
@@ -107,6 +109,10 @@ Before drafting:
 3. check whether the architecture already flagged evidence mismatch risk
 4. identify where the brand should appear naturally
 5. decide which sections should carry the strongest commercial weight
+
+If the architecture includes a `Primary Decision Job`, use it as the page's governing objective.
+
+If the architecture includes `Scope Boundaries`, treat them as hard constraints. Do not add sections, explanations, FAQ topics, or brand content that drift outside those limits just because they sound useful.
 
 Do not move from source review to drafting too quickly.
 
@@ -180,6 +186,17 @@ Try to reflect several of the following when available:
 If the provided materials are rich in facts but the draft remains generic, the draft is failing the task.
 
 If the provided materials are rich in facts but only one or two weak details appear in the final page, the draft is also failing the task.
+
+## Source-Precision Rule
+
+When source material includes multiple machine series, model families, or equipment types, keep them separated unless the relationship is explicit in the provided material.
+
+Rules:
+
+- do not mix one series into another just to make the page feel fuller
+- do not use one machine family for subtype comparison and a different family for the parameter block unless the source explicitly connects them
+- if the relationship between two series is unclear, either explain only the supported facts for each or omit the weaker material
+- when a comparison is important but only partially supported, keep the comparison qualitative and avoid stitching together unsupported specifications
 
 ## Evidence Block Rule
 
@@ -365,6 +382,51 @@ Preferred pattern:
 - extract the fact from the source
 - rewrite it into direct website language
 - keep explicit attribution only when it is necessary for caution or compliance
+
+## Internal-Process Leakage Rule
+
+The final output is a publishable page draft, not a research memo, source audit, or editor note.
+
+Never include page-internal or workflow-internal phrasing such as:
+
+- `for this page`
+- `this page should`
+- `a good page should`
+- `buyers usually want to know`
+- `based on the company's official website`
+- `based on the brochure materials`
+- `according to the provided brochure`
+- `the brochure explicitly notes`
+- `visible brochure references`
+- `visible model and capacity references`
+- `should be confirmed before publication`
+- `should be verified against the latest technical documents`
+
+These phrases are warning signs that the draft is leaking planning notes or source-review language into publishable copy.
+
+Bad pattern:
+
+- `For this page, the brand section should support the buying decision rather than overwhelm it.`
+- `Visible brochure references show several models in the range.`
+- `These figures should be confirmed against the latest technical documents before publication.`
+
+Better pattern:
+
+- `For buyers comparing suppliers, brand credibility matters most when it supports equipment selection, installation, and line integration.`
+- `Available models in this series cover different throughput ranges for different plant layouts.`
+- `Final model selection should match the waste stream, bag density, and downstream process.`
+
+## Preflight Self-Check
+
+Before returning the final draft, silently verify all of the following:
+
+1. the copy reads like a website page, not an internal brief or evidence memo
+2. no section contains banned source-led or page-planning phrasing unless explicit attribution is truly necessary
+3. every main section adds at least one concrete, decision-useful fact, distinction, or selection factor
+4. brand and supplier support content stays secondary and tied to buyer outcomes
+5. if model names, capacities, or subtype differences appear, they belong to a clearly consistent and source-supported product family
+
+If any check fails, revise the draft before answering.
 
 ## Output Requirements
 
